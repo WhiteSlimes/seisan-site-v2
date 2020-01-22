@@ -12,9 +12,25 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+route::get('/users', 'showusersController@show')->name('users');
+Route::get('/presentation', 'PresentationController@show')->name('presentation');
+route::get('/presentation/regles', 'PresentationController@showRegles')->name('regles');
+route::get('/presentation/histoire', 'PresentationController@showHistoire')->name('histoire');
+route::get('/presentation/presentation_serveur', 'PresentationController@showPresentation')->name('presentation_serveur');
+
+Route::get('/contact/contact', [
+    'uses' => 'ContactMessageController@create'
+])->name('contact');
+
+Route::post('/contact/contact', [
+    'uses' => 'ContactMessageController@store',
+    'as' => 'contact.store'
+]);
+
+Route::get('/profiles/show', 'ShowProfile@show')->name('profil');
