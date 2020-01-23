@@ -29,8 +29,8 @@
             </div>
             <div class="row mt-5">
                 <div class="col-4">
-                    <p><b>Histoire du personnage :</b> @foreach($user->posts as $post) {{ $post->caption }} @endforeach</p>
-                </div>
+                    <p><b>Histoire du personnage :</b> {{ $user->profile->histoire }}</p>
+                    <p><b>Description physique :</b> {{ $user->profile->description_physique }}</p>                </div>
             </div>
         </div>
     @else
@@ -42,9 +42,7 @@
                 <div class="col-8">
                     <div class="d-flex">
                         <div class="h4 mr-3 pt-2">{{$user->username}}</div>
-                        @role('admin')
                             <a href="{{ route('profiles.edit', ['user' => $user->username]) }}" class="btn btn-outline-secondary mt-3">Modifier les informations</a>
-                        @endrole
                     </div>
                     <div class="mt-3">
                         <div>Force : <strong>{{ $user->profile->force }}</strong></div>

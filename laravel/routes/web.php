@@ -24,6 +24,13 @@ route::get('/presentation/regles', 'PresentationController@showRegles')->name('r
 route::get('/presentation/histoire', 'PresentationController@showHistoire')->name('histoire');
 route::get('/presentation/presentation_serveur', 'PresentationController@showPresentation')->name('presentation_serveur');
 
+Route::get('/profiles/{user}', 'ProfileController@show')->name('profiles.show');
+Route::get('/profiles/{user}/edit', 'ProfileController@edit')->name('profiles.edit');
+Route::patch('/profiles/{user}', 'ProfileController@update')->name('profiles.update');
+
+Route::get('/posts/{user}/edit', 'PostController@edit')->name('posts.edit');
+Route::patch('/posts/{user}', 'PostController@update')->name('posts.update');
+
 Route::get('/contact/contact', [
     'uses' => 'ContactMessageController@create'
 ])->name('contact');
@@ -33,4 +40,4 @@ Route::post('/contact/contact', [
     'as' => 'contact.store'
 ]);
 
-Route::get('/profiles/show', 'ShowProfile@show')->name('profil');
+Route::get('/profiles/{user}', 'ShowProfile@show')->name('profiles.show');
