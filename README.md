@@ -29,7 +29,7 @@ Voilà le projet est prêt à être utilisé normalement.
 
 # Doc - Laravel du Groupe 11 #
 
-## Rapelle du projet : 
+## Rappelle du projet : 
 
 ```
 Seisan.fr
@@ -48,11 +48,11 @@ Une liste des membres consultable par tous mais avec des options supplémentaire
 
 ```
 
-## Les fonctionalités mise en places :
+## Les fonctionnalités mises en place :
 
-Notre site met en place certaine des fonctionalités : 
-- L'inscritpion et connexion 
+Notre site met en place certaine des fonctionnalités : 
+- L'inscription et connexion 
 - Un profil éditable 
-- Une page d'acceuil 
-- Des pages de présentations
+- Une page d'accueil
+- Des pages de présentation
 - Une liste des membres 
