@@ -41,3 +41,9 @@ Route::post('/contact/contact', [
 ]);
 
 Route::get('/profiles/show', 'ShowProfile@show')->name('profil');
+
+
+Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function (){
+    Route::resource('users', 'UsersController');
+
+});
