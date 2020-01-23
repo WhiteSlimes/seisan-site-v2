@@ -2,12 +2,14 @@
 @section('content')
 
     <h1>Les utilisateurs inscrits</h1>
+    <th scope="col">Pseudo</th>
 
-    <ul>
         @foreach($user as $users)
 
-            <li>{{ $users['username'] }}</li>
 
+            <ul>
+                <li>{{$users->name}}</li>
+            </ul>
         @endforeach
-    </ul>
+
 @endsection

@@ -18,7 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-route::get('/users', 'showusersController@show')->name('users');
+route::get('/users', 'showusersController@list')->name('users');
 Route::get('/presentation', 'PresentationController@show')->name('presentation');
 route::get('/presentation/regles', 'PresentationController@showRegles')->name('regles');
 route::get('/presentation/histoire', 'PresentationController@showHistoire')->name('histoire');
