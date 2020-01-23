@@ -40,4 +40,4 @@ Route::post('/contact/contact', [
     'as' => 'contact.store'
 ]);
 
-Route::get('/profiles/{user}', 'ShowProfile@show')->name('profiles.show');
+Route::get('/profiles/show', 'ShowProfile@show')->name('profil');
