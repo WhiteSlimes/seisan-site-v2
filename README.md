@@ -1,4 +1,4 @@
-# installation du projet laravel
+# Installation du projet laravel
 
 ```
 git clone https://github.com/WhiteSlimes/seisan-site-v2
