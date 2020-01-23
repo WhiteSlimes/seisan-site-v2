@@ -12,6 +12,7 @@ Il faut ensuite installer tous ce qu'il faut
 ```
 composer install
 npm install
+npm run dev
 ```
 
 ensuite il faut copier le fichier env 
@@ -24,6 +25,7 @@ dans le .env il faut modifier les informations sur le Base de données (DB_HOST,
 ```
 php artisan migrate
 php artisan db:seed
+php artisan serve
 ```
 Voilà le projet est prêt à être utilisé normalement.
 
